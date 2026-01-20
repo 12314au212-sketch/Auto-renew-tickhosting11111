@@ -59,7 +59,7 @@ def try_login(driver):
     try:
         print("\nAttempting to navigate to dashboard...")
         driver.get("https://tickhosting.com")
-        time.sleep(5)
+        time.sleep(10)
         print(f"URL after navigation: {driver.current_url}")
         
         # Check if we're on the dashboard
