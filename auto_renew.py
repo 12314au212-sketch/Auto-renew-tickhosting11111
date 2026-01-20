@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from datetime import datetime
+from time import delay
 import time
 from dateutil import parser
 import os
@@ -59,7 +60,7 @@ def try_login(driver):
     try:
         print("\nAttempting to navigate to dashboard...")
         driver.get("https://tickhosting.com")
-        time.sleep(20)
+        sleep(20)
         print(f"URL after navigation: {driver.current_url}")
         
         # Check if we're on the dashboard
